@@ -103,3 +103,13 @@ void StudentList::displayList() const {
         nodePtr = nodePtr->next;
     }
 }
+void StudentList::clear() {
+    StudentNode* current = head;
+    while (current) {
+        StudentNode* temp = current;
+        current = current->next;
+        delete temp;
+    }
+    head = nullptr;
+}
+
