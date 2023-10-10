@@ -30,6 +30,7 @@ public:
     void insertNode(int, double);
     void deleteNode(int);
     void displayList() const;
+    void clear();
     
 };
 #endif /* StudentList_hpp */
